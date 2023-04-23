@@ -1,0 +1,27 @@
+package DAKhoAnhPhongCanh;
+
+public class AnhPhongCanhVietNam extends AnhPhongCanh {
+
+    private String TenTinhThanh;
+
+    public AnhPhongCanhVietNam() {
+    }
+
+    public AnhPhongCanhVietNam(String Name, String TacGia, String KichThuoc, NgayNhapXuat date, String TenTinhThanh) {
+        super(Name, TacGia, KichThuoc, date);
+        this.TenTinhThanh = TenTinhThanh;
+    }
+
+    public String getTenTinhThanh() {
+        return TenTinhThanh;
+    }
+
+    public void setTenTinhThanh(String TenTinhThanh) {
+        this.TenTinhThanh = TenTinhThanh;
+    }
+
+    @Override
+    public String toString() {
+        return "AnhPhongCanhVietNam{" + super.toString() + ", TenTinhThanh=" + TenTinhThanh + '}';
+    }
+}
